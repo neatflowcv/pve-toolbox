@@ -49,6 +49,29 @@ PVE_INSECURE="true"
 ./list-nodes.sh --env-file ./prod.env
 ```
 
+모든 노드의 system journal 로그를 가져옵니다.
+
+```bash
+./fetch-system-logs.sh
+```
+
+시간 범위를 지정하지 않으면 기본으로 1시간 전부터 현재 시각까지 가져옵니다.
+
+시간 범위로 가져올 수도 있습니다.
+
+```bash
+./fetch-system-logs.sh --since "1 hour ago" --until "now"
+./fetch-system-logs.sh --since "2026-07-03 10:00:00" --until "2026-07-03 11:00:00"
+```
+
+원본 journal API JSON을 파일로 남기려면 `--json`을 사용합니다.
+
+```bash
+./fetch-system-logs.sh --since "today 00:00" --until "now" --json
+```
+
+`--since`와 `--until`은 epoch 초 또는 GNU `date -d`가 해석할 수 있는 문자열을 받습니다. 스크립트가 Proxmox VE journal API에 맞게 epoch 초로 변환해서 요청합니다.
+
 ## 출력
 
 기본 표에는 다음 항목이 포함됩니다.
