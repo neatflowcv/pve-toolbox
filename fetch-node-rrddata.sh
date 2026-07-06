@@ -211,9 +211,14 @@ else
       elif type == "number" then ((. * 100 | round) / 100 | tostring)
       else tostring
       end;
+    def timefmt:
+      if . == null then ""
+      elif type == "number" then strflocaltime("%Y-%m-%d %H:%M:%S")
+      else (try (tonumber | strflocaltime("%Y-%m-%d %H:%M:%S")) catch tostring)
+      end;
     ["TIME", "CPU", "IOWAIT", "LOADAVG", "MEM", "NETIN", "NETOUT", "DISKREAD", "DISKWRITE"],
     (.data[]? | [
-      ((.time // "") | tostring),
+      (.time | timefmt),
       (.cpu | pct),
       (.iowait | pct),
       (.loadavg | number),
