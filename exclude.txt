@@ -1,0 +1,37 @@
+pvedaemon\[[0-9]+\]: worker exit
+pvedaemon\[[0-9]+\]: worker [0-9]+ finished
+pvedaemon\[[0-9]+\]: starting [0-9]+ worker\(s\)
+pvedaemon\[[0-9]+\]: worker [0-9]+ started
+pvedaemon\[[0-9]+\]: <[A-Za-z0-9_.@-]+> successful auth for user '[A-Za-z0-9_.@-]+'
+pveproxy\[[0-9]+\]: worker exit
+pveproxy\[[0-9]+\]: worker [0-9]+ finished
+pveproxy\[[0-9]+\]: starting [0-9]+ worker\(s\)
+pveproxy\[[0-9]+\]: worker [0-9]+ started
+pveproxy\[[0-9]+\]:[[:space:]]+source: no such ipset '[A-Za-z0-9_.-]+'
+pveproxy\[[0-9]+\]: Clearing outdated entries from certificate cache
+pveproxy\[[0-9]+\]: /etc/pve/firewall/[0-9]+\.fw \(line [0-9]+\) - errors in rule parameters:
+pve-firewall\[[0-9]+\]:[[:space:]]+source: no such ipset '[A-Za-z0-9_.-]+'
+pve-firewall\[[0-9]+\]: /etc/pve/firewall/[0-9]+\.fw \(line [0-9]+\) - errors in rule parameters:
+pvestatd\[[0-9]+\]: auth key pair too old, rotating\.\.
+pmxcfs\[[0-9]+\]: \[dcdb\] notice: data verification successful
+pmxcfs\[[0-9]+\]: \[status\] notice: received log
+smartd\[[0-9]+\]: Device: /dev/[A-Za-z0-9]+ \[SAT\], SMART Usage Attribute: [0-9]+ [A-Za-z0-9_]+ changed from [0-9]+ to [0-9]+
+CRON\[[0-9]+\]: \(root\) CMD \(command -v debian-sa1 > /dev/null && debian-sa1 [0-9]+ [0-9]+\)
+CRON\[[0-9]+\]: pam_unix\(cron:session\): session closed for user root
+CRON\[[0-9]+\]: pam_unix\(cron:session\): session opened for user root\(uid=[0-9]+\) by root\(uid=[0-9]+\)
+CRON\[[0-9]+\]: \(root\) CMD \(cd / && run-parts --report /etc/cron\.hourly\)
+systemd\[[0-9]+\]: Starting systemd-tmpfiles-clean\.service - Cleanup of Temporary Directories\.\.\.
+systemd\[[0-9]+\]: systemd-tmpfiles-clean\.service: Deactivated successfully\.
+systemd\[[0-9]+\]: Finished systemd-tmpfiles-clean\.service - Cleanup of Temporary Directories\.
+systemd\[[0-9]+\]: Starting apt-daily\.service - Daily apt download activities\.\.\.
+systemd\[[0-9]+\]: apt-daily\.service: Deactivated successfully\.
+systemd\[[0-9]+\]: Finished apt-daily\.service - Daily apt download activities\.
+systemd\[[0-9]+\]: ksmtuned\.service: Deactivated successfully\.
+systemd\[[0-9]+\]: ksmtuned\.service: Consumed [0-9]+min [0-9]+\.[0-9]+s CPU time, [0-9]+\.[0-9]+M memory peak\.
+systemd-tmpfiles\[[0-9]+\]: /usr/lib/tmpfiles\.d/.*\.conf:[0-9]+: Duplicate line for path ".*", ignoring\.
+s=[0-9a-f]+;i=[0-9a-f]+;b=[0-9a-f]+;m=[0-9a-f]+;t=[0-9a-f]+;x=[0-9a-f]+
+sudo\[[0-9]+\]: pam_unix\(sudo:session\): session opened for user root\(uid=0\) by \(uid=[0-9]+\)
+sudo\[[0-9]+\]: pam_unix\(sudo:session\): session closed for user root
+systemd\[[0-9]+\]: Starting man-db.service - Daily man-db regeneration\.\.\.
+systemd\[[0-9]+\]: man-db.service: Deactivated successfully\.
+systemd\[[0-9]+\]: Finished man-db.service - Daily man-db regeneration\.
