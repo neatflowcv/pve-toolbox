@@ -35,3 +35,6 @@ sudo\[[0-9]+\]: pam_unix\(sudo:session\): session closed for user root
 systemd\[[0-9]+\]: Starting man-db.service - Daily man-db regeneration\.\.\.
 systemd\[[0-9]+\]: man-db.service: Deactivated successfully\.
 systemd\[[0-9]+\]: Finished man-db.service - Daily man-db regeneration\.
+sudo\[[0-9]+\]:\s+ceph\s+:\s+PWD=/\s+;\s+USER=root\s+;\s+COMMAND=/usr/sbin/smartctl -x --json=o /dev/\S+
+sudo\[[0-9]+\]:\s+ceph\s+:\s+PWD=/\s+;\s+USER=root\s+;\s+COMMAND=/usr/sbin/nvme \S+ smart-log-add --json /dev/\S+
+CRON\[[0-9]+\]: \(root\) CMD \(
