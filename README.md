@@ -72,6 +72,16 @@ PVE_INSECURE="true"
 
 `--since`와 `--until`은 epoch 초 또는 GNU `date -d`가 해석할 수 있는 문자열을 받습니다. 스크립트가 Proxmox VE journal API에 맞게 epoch 초로 변환해서 요청합니다.
 
+특정 노드의 RRD 데이터를 조회합니다.
+
+```bash
+./fetch-node-rrddata.sh pve1
+./fetch-node-rrddata.sh --node pve1 --timeframe day
+./fetch-node-rrddata.sh --node pve1 --timeframe week --cf MAX --json
+```
+
+`--timeframe`은 기본값이 `hour`이며 일반적으로 `hour`, `day`, `week`, `month`, `year`를 사용할 수 있습니다. `--cf`는 기본값이 `AVERAGE`이며 `MAX`도 사용할 수 있습니다.
+
 ## 출력
 
 기본 표에는 다음 항목이 포함됩니다.
